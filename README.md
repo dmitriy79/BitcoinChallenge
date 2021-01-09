@@ -11,6 +11,8 @@ pip install bit
 btcchallenge.py uses input with challenge 1-160
 this will ask for what challenge you want to search
 
-btcchallengearg.py uses sys.argv ie python3 btchallengearg.py 64 
+btcchallengearg.py uses sys.argv ie $python3 btchallengearg.py 64 
 this will pass 64 as a the challenge to be searched 
+to run in nohup on a vm $nohup python3 -u btcchallenge.py (arg 1-160)
+
 
