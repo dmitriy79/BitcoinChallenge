@@ -1,6 +1,9 @@
 # Bitcoin Challenge
 Bitcoin Challenge 
 
+install 
+git clone https://github.com/WrappedSatoshi/BitcoinChallenge
+
 https://bitcointalk.org/index.php?topic=5218972.0
 Bitcoin challenge 
 Python file to search for challenge bitcoin address 
