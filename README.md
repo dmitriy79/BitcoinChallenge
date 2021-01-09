@@ -30,6 +30,6 @@ Bitcoin Found
 0000000000000000000000000000000000000000000000000000000000000007
 //////////////////////////////////////////////////////////////////
 
-to run in nohup on a vm $nohup python3 -u btcchallenge.py (arg 1-160)
+to run in nohup $nohup python3 -u btcchallenge.py (arg 1-160)
 
 
