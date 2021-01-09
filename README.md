@@ -1,4 +1,4 @@
-# BitcoinChallenge
+# Bitcoin Challenge
 Bitcoin Challenge 
 
 https://bitcointalk.org/index.php?topic=5218972.0
