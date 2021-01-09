@@ -17,7 +17,7 @@ maxfile = open("maxlist.txt", "r")
 maxlimit = maxfile.readlines()
 maxilimit = int(maxlimit[challengeint -1])
 lowlimit = int(maxlimit[challengeint -2])
-print('Range Upper Limit: ',lowlimit)
+print('Range Lower Limit: ',lowlimit)
 print('Range Upper Limit: ',maxilimit)
 maxfile.close()
 
