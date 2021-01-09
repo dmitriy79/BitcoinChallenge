@@ -14,7 +14,7 @@ this will ask for what challenge you want to search
 btcchallengearg.py uses sys.argv ie $python3 btchallengearg.py 3 
 this will pass 3 as a the challenge to be searched 
 
-
+//////////////////////////////////////////////////////////////////
 
 python3 btcchallenge.py 3
 
@@ -36,6 +36,7 @@ Bitcoin Found
 
 0000000000000000000000000000000000000000000000000000000000000007
 
+//////////////////////////////////////////////////////////////////
 
 to run in nohup $nohup python3 -u btcchallenge.py (arg 1-160)
 
