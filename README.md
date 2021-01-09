@@ -12,7 +12,7 @@ https://pypi.org/project/bit/
 pip install bit 
 
 
-btcchallenge.py uses sys.argv /// $python3 btchallengearg.py 3  ///
+btcchallenge.py uses sys.argv /// $python3 btchallenge.py 3  ///
 this will pass 3 as a the challenge to be searched 
 
 //////////////////////////////////////////////////////////////////
