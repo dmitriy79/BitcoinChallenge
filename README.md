@@ -43,4 +43,8 @@ Bitcoin Found
 
 to run in nohup $nohup python3 -u btcchallenge.py (arg 1-160)
 
+if you have found this useful please donate 
+BITCOIN:
+3H4422BQg7Thft1KM1sfvhkHUeo1ceQhsY
+
 
