@@ -1,7 +1,7 @@
 # Bitcoin Challenge
 Bitcoin Challenge 
 
-install 
+install:
 git clone https://github.com/WrappedSatoshi/BitcoinChallenge
 
 https://bitcointalk.org/index.php?topic=5218972.0
