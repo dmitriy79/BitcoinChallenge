@@ -17,16 +17,23 @@ this will pass 3 as a the challenge to be searched
 
 
 python3 btcchallenge.py 3
+
 Challenge Number =  3
+
 Challenge Address:  19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA
 
 Range Upper Limit:  7
 
 CHALLENGE ACCEPTED
+
 searching.........
+
 19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA
+
 Bitcoin Found
+
 19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA
+
 0000000000000000000000000000000000000000000000000000000000000007
 
 
