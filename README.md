@@ -11,8 +11,25 @@ pip install bit
 btcchallenge.py uses input with challenge 1-160
 this will ask for what challenge you want to search
 
-btcchallengearg.py uses sys.argv ie $python3 btchallengearg.py 64 
-this will pass 64 as a the challenge to be searched 
+btcchallengearg.py uses sys.argv ie $python3 btchallengearg.py 3 
+this will pass 3 as a the challenge to be searched 
+
+
+///////////////////////////////////////////////////////////////////
+python3 btcchallenge.py 3
+Challenge Number =  3
+Challenge Address:  19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA
+
+Range Upper Limit:  7
+
+CHALLENGE ACCEPTED
+searching.........
+19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA
+Bitcoin Found
+19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA
+0000000000000000000000000000000000000000000000000000000000000007
+//////////////////////////////////////////////////////////////////
+
 to run in nohup on a vm $nohup python3 -u btcchallenge.py (arg 1-160)
 
 
