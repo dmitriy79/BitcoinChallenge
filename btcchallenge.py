@@ -1,11 +1,11 @@
 from bit import *
 from bit.format import bytes_to_wif
 from random import *
+import sys
 
-
-print('What challenge shall we beat?')
-challengeint = input()
-challengeint = int(challengeint)
+challengearg = sys.argv[1]
+challengeint = int(challengearg)
+print('Challenge Number = ',challengeint)
 addressfile = open("addresslist.txt", "r")
 challenge = addressfile.readlines()
 challengeaddress = challenge[challengeint -1]
@@ -16,7 +16,9 @@ addressfile.close()
 maxfile = open("maxlist.txt", "r")
 maxlimit = maxfile.readlines()
 maxilimit = int(maxlimit[challengeint -1])
-print('Range Upper Limit: ',maxlimit[challengeint -1])
+lowlimit = int(maxlimit[challengeint -2])
+print('Range Upper Limit: ',lowlimit)
+print('Range Upper Limit: ',maxilimit)
 maxfile.close()
 
 pkey = 0
@@ -30,7 +32,7 @@ print('searching.........')
 
 while True:
     scantime +=1
-    pkey= randint(1,maxilimit)
+    pkey= randint(lowlimit,maxilimit)
     hexpkey = hex(pkey)
     hexpkey = hexpkey [2:]
     prvstring = hexpkey
