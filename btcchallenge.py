@@ -1,6 +1,7 @@
 from bit import Key
 from random import randint
 import sys
+import time
 
 challengearg = sys.argv[1]
 challengeint = int(challengearg)
@@ -24,11 +25,12 @@ pkey = 0
 plus1 = 1
 totalscantime = 0
 scantime = 0
-
 hunt = challengeaddress
+
 print('CHALLENGE ACCEPTED')
 print('searching.........')
 
+starttime = time.time()
 while True:
     scantime += 1
     pkey = randint(lowlimit, maxilimit)
@@ -38,7 +40,9 @@ while True:
     prvstring = str(prvstring)
     prvstring = prvstring.zfill(64)
     key = Key.from_hex(prvstring)
-    pubaddresscomp = key.address   
+    pubaddresscomp = key.address 
+    endtime = time.time() - starttime 
+
     if pubaddresscomp == hunt:
         print(pubaddresscomp)
         data = open("btclist.txt", "w")
@@ -46,10 +50,13 @@ while True:
         print(pubaddresscomp, file=data)
         data.close()
         break
-    if scantime == 100000:
+    if endtime >= 60:
+        print(scantime, 'per minute scanned')
         totalscantime = totalscantime + scantime
-        scantime = 0
         print(totalscantime, 'keys searched')
+        scantime = 0
+        starttime = time.time()
+        
 print("Bitcoin Found")
 print('Public Address: ', pubaddresscomp)
 print('Private Key: ', prvstring)
@@ -57,4 +64,3 @@ print('Total Address Scanned: ', totalscantime)
 status = open("nohupstatus.txt", "a")
 print("coin found closed", file=status)
 status.close()
-
